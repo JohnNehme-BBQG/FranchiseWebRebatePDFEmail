@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="azvsreport-01p.Nav_Processes1"
+  DTS:DTSID="{AD9ED96B-797D-4145-84A0-CBFF62F2729D}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=azvsreport-01p;Initial Catalog=Nav_Processes;Integrated Security=True;Application Name=SSIS-FranchiseRebateReports-{AD9ED96B-797D-4145-84A0-CBFF62F2729D}azvsreport-01p.Nav_Processes1;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
