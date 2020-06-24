@@ -11,8 +11,8 @@
   DTS:LocaleID="3081"
   DTS:ObjectName="SendFranchiseRebateReports"
   DTS:PackageType="5"
-  DTS:VersionBuild="193"
-  DTS:VersionGUID="{2AFBCD32-C0D8-4A3C-962E-D15B11CECF17}">
+  DTS:VersionBuild="196"
+  DTS:VersionGUID="{E827C103-3D72-4B90-AD62-567C3DF95D1A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -167,6 +167,7 @@
       DTS:InitExpression="@IncrementValue=1"
       DTS:LocaleID="-1"
       DTS:MaxConcurrent="1"
+      DTS:MaxErrorCount="5"
       DTS:ObjectName="Loop Query Paid, Output to PDF builder">
       <DTS:Variables />
       <DTS:Executables>
@@ -238,6 +239,7 @@ FOR XML auto, elements,type,root('Rebates') OPTION (FAST 100)"</DTS:PropertyExpr
           DTS:DTSID="{8960BF81-FE36-4BA7-AAEA-2F60BA48DEDF}"
           DTS:ExecutableType="Microsoft.XMLTask"
           DTS:LocaleID="-1"
+          DTS:MaxErrorCount="3"
           DTS:ObjectName="Reformat results in HTML"
           DTS:TaskContact="XML Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
