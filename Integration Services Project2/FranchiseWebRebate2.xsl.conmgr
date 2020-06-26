@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="FranchiseWebRebate2.xsl"
+  DTS:DTSID="{F87AAC11-5B1D-4BBC-A5BF-BA7FF4AEB312}"
+  DTS:CreationName="FILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="\\Vm-aries\g_it\FranchiseRebate\FranchiseWebRebate2.xsl" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">HQVSMDM-05P</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACVuO8m1+TUKJNoFPvSD15AAAAAACAAAAAAADZgAAwAAAABAAAAAlkztao+ezK8YCVfkHET2TAAAAAASAAACgAAAAEAAAACcsn2aBShjhJQ7PUrnW4EuIAAAA37TOz//ZzwZ5VCVr9NmEre7M6VYKCG7J+zPBSYNetP0Q2xgcrmwehQWUl0zrxhWhjnVUBjTctOTEGYlkUulyfb9gTrtpyI42lloULSv74qfjPdu9ylu6xZ9KoSHMHz0K1PTFIygSzuF2s1cFbnq3u7qugGXyU8rw/fHSVbJBSqDpFBJ0RgtQTRQAAAB1Uch5JE4ERAZuj+mhKUr6FKqoKg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACVuO8m1+TUKJNoFPvSD15AAAAAACAAAAAAADZgAAwAAAABAAAABRctx2GZJapaNbMYyvSRWJAAAAAASAAACgAAAAEAAAAHszLwTzRESLnfGTQ6g0qHKIAAAAqggua/wDyKKPhi2ijIgGb0UvoaxvFm8qRpGcmI238FPu5SG+MC6OZdcF8ydIByZFihiSZXmPCb76xJKQ1ikKbfnxDPgmy8TvmLqCvPaiXUlHbv8uJ9FlyGikY9XXEFRJL72gLu3O3PXwic5ibelThzllQ9K4IXz5y2TwJnIzoYo6sZABy25uMRQAAAC7Qo4lZY7PsjO3qoma2KU0GWVm8w==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -35,6 +35,7 @@
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="azvsreport-01p.Nav_Processes1.conmgr" />
           <SSIS:ConnectionManager SSIS:Name="FranchiseWebRebate.xsl.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="FranchiseWebRebate2.xsl.conmgr" />
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
@@ -156,6 +157,21 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.FranchiseWebRebate2.xsl.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">\\Vm-aries\g_it\FranchiseRebate\FranchiseWebRebate2.xsl</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
           </SSIS:ProjectConnectionParameters>
           <SSIS:PackageInfo>
             <SSIS:PackageMetaData SSIS:Name="SendFranchiseRebateReports.dtsx">
@@ -164,31 +180,16 @@
                 <SSIS:Property SSIS:Name="Name">SendFranchiseRebateReports</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">242</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">245</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{BB9F39C8-7C9D-4FA0-85A1-567A1C037149}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{566459A4-4D50-4947-A0A7-2710F441198E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.FranchiseWebRebate2.xsl.ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\VM-ARIES\S_Drive\John Nehme\SSIS Test XML\FranchiseWebRebate2.xsl</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.test xml Flat File Connection Manager.AlwaysCheckForRowDelimiters">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
