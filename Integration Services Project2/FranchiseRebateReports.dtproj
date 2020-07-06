@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">HQVSMDM-05P</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACVuO8m1+TUKJNoFPvSD15AAAAAACAAAAAAADZgAAwAAAABAAAAAAK1rtM4JM0p5gYihMerX/AAAAAASAAACgAAAAEAAAAAz3sVqN9tRkAnYh7Iy3B1+IAAAARwlvvp4lHx0w798OYGjsSao7I2850YvP1NiWPclNxOOoYD3AceBHDkaMj3ylqfsqj0xRdaIPDeq9HComViIu0gqDUW12+bXEdfAiQI0m4HYH0hjpJZwOrew0Crb/5po+P/QR5Ktnjhgc3V4RrT3NRFCyM2iWjDbU6icUxv5f/64DtCwPAhVuJRQAAACvNasYyRpPeC8V1TW1HPYFO69W/g==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACVuO8m1+TUKJNoFPvSD15AAAAAACAAAAAAADZgAAwAAAABAAAACYX9HB+EPm5TTcX0+k4WooAAAAAASAAACgAAAAEAAAAKLkooPWhIXx07MMRH79Du2IAAAALXh2mkm1dMTes/YB7CpP9mj5gWIpEkXdADjrWYrZXW4r5jJShCLEEjlFQsS/JZV169I/bNNMXXxWxRIkh3RG1OzsIe5wskGm7B9q2W2bE5ZeUJFWH4kj1CGrhEyKNzkn2kMA1j8zm/cYyUuL/T+jEINFFdj2sDJ9NSAEun/hu/hjHslsB/y+XhQAAACX64N1ZBvAGiBSztt3p5MnyFq0TQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -35,6 +35,7 @@
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="azvsreport-01p.Nav_Processes1.conmgr" />
           <SSIS:ConnectionManager SSIS:Name="FranchiseWebRebate2.xsl.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="tendertypes.xsl.conmgr" />
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
@@ -156,6 +157,21 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.tendertypes.xsl.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">\\Vm-aries\g_it\FranchiseRebate\tendertypes.xsl</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
           </SSIS:ProjectConnectionParameters>
           <SSIS:PackageInfo>
             <SSIS:PackageMetaData SSIS:Name="SendFranchiseRebateReports.dtsx">
@@ -164,10 +180,10 @@
                 <SSIS:Property SSIS:Name="Name">SendFranchiseRebateReports</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">246</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">269</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{BB0796BC-C63F-4FD8-84F4-88765CEC76A9}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A3DE4549-BB3C-4FAF-8488-94CB69C1466D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

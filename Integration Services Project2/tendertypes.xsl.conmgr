@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="tendertypes.xsl"
+  DTS:DTSID="{91301730-4091-45BE-BF28-F53DB6EC5AD7}"
+  DTS:CreationName="FILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="\\Vm-aries\g_it\FranchiseRebate\tendertypes.xsl" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
